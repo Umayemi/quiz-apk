@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: navy;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section1{
+    width: 35%;
+    margin: auto;
+    padding: auto;
+    display: block;
+    background-color: white;
+    padding: 50px 20px 50px 20px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    width:100%;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#mail{
+    margin: auto;
+    margin-left: 30px;
+    width: 83%;
+    margin-bottom: 25px;
+}
+#email{
+    margin-top: 10px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 20px;
+}
+#passkey{
+    width: 83%;  
+    margin-left: 30px;
+}
+#password{
+    margin-top: 10px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 20px;
+}
+#eye{
+  position: relative;
+  bottom: 50px;
+  left: 90%;
+}
+#open{
+    color: red;
+    top: 19px;
+    position: relative;
+    visibility: hidden;
+}
+#close{
+    position: relative;
+}
+#forget_password{
+    font-size: 10px;
+    opacity: 0.6;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#login{
+    border: 1px solid white;
+    background-color: navy;
+    color: white;
+    height: 50px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 85%;   
+}
+#adio{
+    width: 100%;
+    text-align: center;
+}
+

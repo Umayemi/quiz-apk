@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: navy;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section1{
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 50px 20px;
+}
+#progress{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#time{
+    text-align: right;
+    margin-bottom: 40px;
+}
+#timer-left{
+    font-size: 20px;
+    font-weight: 500;
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#choice-container{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 1px solid navy;
+    user-select: none;
+}
+#choice-container:hover{
+    filter: drop-shadow(2px 2px 5px  rgba(22, 17, 103, 0.607));
+}
+.choice-text{
+    width: 100%;
+    padding: 0px 5px 5px 0px;
+    margin: auto;
+}
+.choice-prefix{
+    font-size: 20px;
+    margin: auto;
+    background-color: navy;
+    padding: 0;
+    width: 50px;
+    height:50px;
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    margin-right: 10px;
+    user-select: none;
+}
+.prefix{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top:25%;
+}
+#choice-container.correct{
+    background-color: green;
+}
+#choice-container.incorrect{
+    background-color: red;
+}
+#wrapper{
+    position: absolute;
+    background-color: navy;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.end-container{
+    background-color: whitesmoke;
+    width: 400px;
+    height:400px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 20px;
+    z-index: 1;
+    
+}
+.result-text{
+    color: navy;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.circle{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left:25%;
+    margin-top:30px;
+    border-radius: 50%;
+    text-align: center;
+}
+.circle-text{
+    color:white;
+    font-size: 25px;
+}
+#number_scored{
+    font-size: 50px;
+}
+
+#mark{
+    padding: 5px 5px 5px 5px;
+    width: 50px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+#done_btn{
+    position: relative;
+    left: 41%;
+    padding:5px ;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid navy;
+    width: 60px;
+    margin-top: 50px;
+
+}

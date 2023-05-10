@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="quiz2.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="section1">
+        <div>
+            <div id="progress">
+            </div>
+            <div id="time">
+            <div><p>Duration:60s</p></div>
+            <div id="timer-left">Time-Left: 60s</div>
+        </div>  
+            <h1 id="questions">What is the answer to this questions?  </h1>
+            <div id="choice-container">
+                <p class="choice-prefix"><span class="prefix">A</span> </p>
+                <p class="choice-text" data-number="1">Choice1</p>
+            </div>
+            <div id="choice-container">
+                <p class="choice-prefix"><span class="prefix">B</span></p>
+                <p class="choice-text" data-number="2">Choice2</p>
+            </div>
+            <div id="choice-container">
+                <p class="choice-prefix"><span class="prefix">C</span> </p>
+                <p class="choice-text" data-number="3">Choice3 &nbsp;</p>
+            </div>
+            <div id="choice-container">
+                <p class="choice-prefix"><span class="prefix">D</span> </p>
+                <p class="choice-text" data-number="4">Choice4</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="wrapper">
+    <div class="end-container">
+        <div id="end" class="flex-center flex-column">
+            <p class="result-text">Congratulations! You have scored.</p>
+            <div class="circle">
+                <div class="circle-text"><span id="number_scored">0</span> <br>out of 19</div>
+            </div>
+        </div>
+       <a href="index.html"><button id="done_btn">DONE</button></a> 
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
