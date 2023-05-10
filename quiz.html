@@ -11,13 +11,11 @@
 </head>
 <body>
     <div id="section1">
-        <div>
-            <div id="progress">
-            </div>
-            <div id="time">
-            <div><p>Duration:60s</p></div>
-            <div id="timer-left">Time-Left: 60s</div>
-        </div>  
+        <div id="rap">
+        <div id="time_div">
+            <div id="progress"></div>       
+            <div id="timer-left"></div>
+           </div> 
             <h1 id="questions">What is the answer to this questions?  </h1>
             <div id="choice-container">
                 <p class="choice-prefix"><span class="prefix">A</span> </p>
@@ -41,12 +39,19 @@
     <div id="wrapper">
     <div class="end-container">
         <div id="end" class="flex-center flex-column">
-            <p class="result-text">Congratulations! You have scored.</p>
             <div class="circle">
-                <div class="circle-text"><span id="number_scored">0</span> <br>out of 19</div>
-            </div>
+                <img src="trophy.png" alt="" id="trophy">
+                <p class="result-text">Congratulations!</p>
+            </div>   
         </div>
+        <div id="scroll">
+        <div id="percent"><p>0% Scored</p></div>
+        <div class="percent-text"> <p> Quiz completed successfully.</p></div>
+        <div><p class="attempt">Out of <span> 19 questions </span> you got <span class="put_score">0 correct</span> answer</p></div>
+        <div id="baby">
        <a href="index.html"><button id="done_btn">DONE</button></a> 
+    </div>
+    </div>
     </div>
 </div>
     <script src="script.js"></script>

@@ -5,7 +5,7 @@
     font-family: 'poppins',sans-serif;
 }
 body{
-    background-color: navy;
+    background-color: rgb(186, 86, 86);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,23 +14,34 @@ body{
 #section1{
     z-index: 3;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: #001f3d;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 50px 20px;
+    padding: 0px 20px 0px 20px;
+}
+#questions{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+#time_div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 10px;
 }
 #progress{
     position: relative;
-    top: 30px;
     font-size: 20px;
     font-weight: 500;
-}
-#time{
-    text-align: right;
-    margin-bottom: 40px;
 }
 #timer-left{
     font-size: 20px;
@@ -42,11 +53,15 @@ h1{
 }
 #choice-container{
     display: flex;
+    position: relative;
     background-color: rgb(255, 255, 255);
     margin-bottom: 15px;
     font-size: 20px;
     border: 1px solid navy;
     user-select: none;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
 #choice-container:hover{
     filter: drop-shadow(2px 2px 5px  rgba(22, 17, 103, 0.607));
@@ -55,6 +70,11 @@ h1{
     width: 100%;
     padding: 0px 5px 5px 0px;
     margin: auto;
+    
+}
+#rap{
+    width: 500px;
+    position: absolute;
 }
 .choice-prefix{
     font-size: 20px;
@@ -67,6 +87,7 @@ h1{
     color:white;
     font-weight: 600;
     margin-right: 10px;
+    border-radius: 50%;
     user-select: none;
 }
 .prefix{
@@ -74,6 +95,7 @@ h1{
     text-align: center;
     position: relative;
     top:25%;
+    color: white;
 }
 #choice-container.correct{
     background-color: green;
@@ -83,43 +105,44 @@ h1{
 }
 #wrapper{
     position: absolute;
-    background-color: navy;
+    background-color:  #001f3d;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    padding-bottom: 20px;
+}
+#baby{
+    text-align: center;
+    margin-top: 10px;
 }
 .end-container{
-    background-color: whitesmoke;
+    background-color: powderblue;
     width: 400px;
     height:400px;
     border-radius: 10px;
     padding: 30px;
     font-size: 20px;
-    z-index: 1;
     
 }
 .result-text{
-    color: navy;
     text-align: center;
     padding-top: 20px;
-    font-weight: 500;
+    font-weight: 700;
+    justify-content: center;
+
 }
 
 .circle{
-    position: absolute;
     width: 160px;
     height: 160px;
-    background-color: navy;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     position: relative;
     left:25%;
-    margin-top:30px;
-    border-radius: 50%;
     text-align: center;
 }
 .circle-text{
@@ -129,7 +152,10 @@ h1{
 #number_scored{
     font-size: 50px;
 }
-
+#trophy{
+    width: 160px;
+    height: 160px;
+}
 #mark{
     padding: 5px 5px 5px 5px;
     width: 50px;
@@ -138,13 +164,38 @@ h1{
     border-radius: 10px;
 }
 #done_btn{
-    position: relative;
-    left: 41%;
     padding:5px ;
     border-radius: 10px;
     outline: none;
-    border: 1px solid navy;
+    border: 1px solid #001f3d;
     width: 60px;
-    margin-top: 50px;
 
+}
+.percent-text{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+#scroll{
+    position: relative;
+    top: 50px;
+}
+.attempt{
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+span{
+    color: green;
+}
+#percent{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: green;
+    font-weight: 500;
+    text-align: center;
 }

@@ -5,7 +5,8 @@
     font-family: 'poppins',sans-serif;
 }
 body{
-    background-color: navy;
+    background-color: white;
+    color: white;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@ body{
     margin: auto;
     padding: auto;
     display: block;
-    background-color: white;
+    background-color: #001f3d;
     padding: 50px 20px 50px 20px;
 }
 h1{
@@ -46,7 +47,9 @@ p{
     border-left: none;
     border-right: none;
     outline: none;
+    background-color: transparent;
     font-size: 20px;
+    color: white;
 }
 #passkey{
     width: 83%;  
@@ -60,6 +63,8 @@ p{
     border-right: none;
     outline: none;
     font-size: 20px;
+    background-color: transparent;
+    color: white;
 }
 #eye{
   position: relative;
@@ -74,6 +79,7 @@ p{
 }
 #close{
     position: relative;
+    color: white;
 }
 #forget_password{
     font-size: 10px;
@@ -95,5 +101,6 @@ a{
 #adio{
     width: 100%;
     text-align: center;
+    border-radius: 5px;
 }
 

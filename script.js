@@ -5,7 +5,9 @@ const progress = document.querySelector("#progress");
 const end = document.querySelector("#wrapper");
 const numberScored = document.querySelector("#number_scored");
 const mark = document.querySelector("#mark");
-const compliment = document.querySelector(".result-text")
+const compliment = document.querySelector(".result-text");
+const percent = document.querySelector("#percent");
+const putScore =document.querySelector(".put_score");
 let currentQuestion = {};
 
 let score = 0;
@@ -216,11 +218,11 @@ choices.forEach( choice => {
      const classToApply = selectedAnswer == correctAnswer? 'correct' : 'incorrect';
      if (selectedAnswer == correctAnswer) {
         score=score+1;
-        numberScored.innerHTML= score;
-        console.log(e.target)
+        putScore.innerText = score+" "+"correct";
+        percent.innerHTML = (Math.round((score/questions.length)*100))+"%"+" "+"Scored";
+        console.log(score)
      }
      if (score<9) {
-        compliment.innerHTML = 'You can do better.'
      }
      selectedChoice.parentElement.classList.add(classToApply);
     setTimeout(()=>{
@@ -235,13 +237,13 @@ function setTimer() {
     var sec = 60;
     var timer;
     timer = setInterval(()=>{
-        timeCounter.innerHTML = 'Time-Left: '+sec+'s';
+        timeCounter.innerHTML = 'Time: '+sec+'s';
         sec--;
     if (sec==0) {
         end.style.zIndex='5';
     }
     if (sec<10) {
-        timeCounter.innerHTML = 'Time-Left: '+'0'+sec+'s';
+        timeCounter.innerHTML = 'Time: '+'0'+sec+'s';
 
     }
     },1000)
