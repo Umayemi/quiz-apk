@@ -192,7 +192,7 @@ startGame =()=>{
 };
 getNewQuestion= ()=>{
     questionCounter++;
-    progress.innerHTML = "Question"+questionCounter+"/"+questions.length;
+    progress.innerHTML = "Question"+":"+questionCounter+"/"+questions.length;
     if (availableQuestion.length==0 || questionCounter>= max_que) {
         end.style.zIndex='5';
     }
