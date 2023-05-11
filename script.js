@@ -20,7 +20,7 @@ let questions =[
         choice2:"Hyper Text Markup Language",
         choice3:"Hyper Text Multiple Language",
         choice4:"Hyper Tool Multi Language",
-        answer: 3
+        answer: 2
     },
     {
         question: "What does CSS stand for?",
@@ -116,7 +116,7 @@ let questions =[
         choice2: "10",
         choice3: "10,000",
         choice4: "1,000,000",
-        answer: "100"
+        answer: 1
     },
 
     {
@@ -125,7 +125,7 @@ let questions =[
         choice2: "Horse racing",
         choice3: "Street Racing",
         choice4: "Arm Wrestling",
-        answer: "Horse racing"
+        answer: 2
     },
 
     {
@@ -138,8 +138,8 @@ let questions =[
     },
 
     {
-        question: "What’s the most important book in the Moslem religion?",
-        choice1: "The Koran",
+        question: "What’s the most important book in the Muslim religion?",
+        choice1: "The Quran",
         choice2: "The Dictionary",
         choice3: "The Bible",
         choice4: "The Chemistry text Book",
@@ -150,9 +150,9 @@ let questions =[
         question: "What’s the capital of Ethiopia?",
         choice1: "Cape Town",
         choice2: "San Francisco",
-        choice3: "Abuja",
+        choice3: "Addis Ababa",
         choice4: "Syndey",
-        answer: "Addis Ababa"
+        answer: 3
     },
 
     {
@@ -161,7 +161,7 @@ let questions =[
         choice2: "64",
         choice3: "32",
         choice4: "256",
-        answer: "64"
+        answer: 2
     },
 
     {
@@ -170,7 +170,7 @@ let questions =[
         choice2: "Barack Obama",
         choice3: "Wole Soyinka",
         choice4: "Thomas Edison",
-        answer: "Thomas Edison"
+        answer: 4
     },
 
     {
@@ -179,12 +179,12 @@ let questions =[
         choice2: "Again Jesus asked",
         choice3: "In the beginning",
         choice4: "At that time",
-        answer: "In the beginning"
+        answer: 3
     } 
 ]
 
 const CORRECT_BONUS = 0;
-const max_que=19;
+const max_que=20;
 startGame =()=>{
     questionCounter= 0;
     score = 0;
@@ -195,7 +195,7 @@ startGame =()=>{
 getNewQuestion= ()=>{
     questionCounter++;
     progress.innerHTML = "Question"+":"+questionCounter+"/"+questions.length;
-    if (availableQuestion.length==0 || questionCounter>= max_que) {
+    if (availableQuestion.length==0 ) {
         end.style.zIndex='5';
     }
     const questionIndex =Math.floor(Math.random()*availableQuestion.length);
@@ -238,7 +238,7 @@ function setTimer() {
     var timer;
     timer = setInterval(()=>{
         timeCounter.innerHTML = 'Time: '+sec+'s';
-        sec--;
+        // sec--;
     if (sec==0) {
         end.style.zIndex='5';
     }
