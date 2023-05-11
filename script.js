@@ -238,7 +238,7 @@ function setTimer() {
     var timer;
     timer = setInterval(()=>{
         timeCounter.innerHTML = 'Time: '+sec+'s';
-        // sec--;
+        sec--;
     if (sec==0) {
         end.style.zIndex='5';
     }
