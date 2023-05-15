@@ -47,8 +47,8 @@ p{
     border-left: none;
     border-right: none;
     outline: none;
-    background-color: transparent;
-    font-size: 20px;
+    background-color: rgba(0, 0, 255, 0);
+    font-size: 15px;
     color: white;
 }
 #passkey{
@@ -62,8 +62,8 @@ p{
     border-left: none;
     border-right: none;
     outline: none;
-    font-size: 20px;
-    background-color: transparent;
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0);
     color: white;
 }
 #eye{
