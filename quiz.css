@@ -127,6 +127,11 @@ h1{
     font-size: 20px;
     
 }
+#end{
+    align-items: center;
+    justify-content: center;
+    
+}
 .result-text{
     text-align: center;
     padding-top: 20px;
@@ -139,11 +144,9 @@ h1{
     width: 160px;
     height: 160px;
     display: block;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    left:25%;
     text-align: center;
+    margin: auto;
 }
 .circle-text{
     color:white;
