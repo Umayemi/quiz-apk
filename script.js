@@ -233,19 +233,22 @@ choices.forEach( choice => {
    });
    }   
 );
+const endTime = new Date().getTime() + 15 * 60 * 1000;
 function setTimer() {
-    var sec = 60;
-    var timer;
-    timer = setInterval(()=>{
-        timeCounter.innerHTML = 'Time: '+sec+'s';
-        sec--;
-    if (sec==0) {
-        end.style.zIndex='5';
-    }
-    if (sec<10) {
-        timeCounter.innerHTML = 'Time: '+'0'+sec+'s';
-
-    }
-    },1000)
+        const currentTime = new Date().getTime();
+        const timeLeft = endTime - currentTime;
+        if (timeLeft <= 0) {
+            end.style.zIndex='5';
+        }
+        else {
+            const minutes = Math.floor(timeLeft / (60 * 1000));
+            const seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
+            
+            const minutesDisplay = String(minutes).padStart(2, '0');
+            const secondsDisplay = String(seconds).padStart(2, '0');
+            timeCounter.innerHTML = `${minutesDisplay}:${secondsDisplay}`;
+            setTimeout(setTimer, 1000);
+        }
 }
+
 startGame()
